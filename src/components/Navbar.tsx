@@ -26,16 +26,14 @@ export default function Navbar() {
     <div className="bg-white sticky top-0 z-50 w-full shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Image
-            src="/Ajib Course 4000px plus-01.png"
-            alt="logo"
-            width={40}
-            height={40}
-            className="w-8 h-8 sm:w-10 sm:h-10"
-          />
-          <span className="text-lg sm:text-xl font-extrabold text-primary-pink">
-            Ajib Course
-          </span>
+         <div className="w-10 h-10 sm:w-16 sm:h-16 relative">
+            <Image
+              src="/Ajib Course 4000px plus-01.png"
+              alt="logo"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
 
         <nav className="hidden md:flex space-x-6 text-gray-600 font-medium">

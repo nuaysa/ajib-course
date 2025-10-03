@@ -48,7 +48,7 @@ export default function Teachers() {
               className="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-lg transition-all duration-300"
             >
               <div className="relative mb-6">
-                <div className={`w-32 h-32 rounded-full border-4 ${
+                <div className={`w-32 h-32 rounded-full border-4 border-dashed ${
                   teacher.id ==1 
                     ? "border-primary-blue" 
                     : "border-primary-pink"

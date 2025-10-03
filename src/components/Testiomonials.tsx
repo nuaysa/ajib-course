@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 
 export default function Testimonials() {
@@ -65,55 +65,21 @@ export default function Testimonials() {
     <section id="testimoni" className="bg-primary-blue py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            APA KATA ORANG TUA MURID KAMI?
-          </h1>
-          <p className="text-lg lg:text-xl text-white max-w-3xl mx-auto">
-            Dengarkan pengalaman langsung dari orang tua yang telah mempercayakan pendidikan anaknya kepada kami
-          </p>
+          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-4">APA KATA ORANG TUA MURID KAMI?</h1>
+          <p className="text-lg lg:text-xl text-white max-w-3xl mx-auto">Dengarkan pengalaman langsung dari orang tua yang telah mempercayakan pendidikan anaknya kepada kami</p>
         </div>
 
         <div className="md:hidden relative">
           <div className="overflow-hidden rounded-2xl">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
+            <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
               {testimonials.map((testimonial) => (
-                <div
-                  key={testimonial.id}
-                  className="w-full flex-shrink-0 px-2"
-                >
-                  <div
-                    className={`bg-white border-l-4 rounded-2xl shadow-lg p-6 ${
-                      testimonial.id % 2 === 0
-                        ? "border-primary-blue"
-                        : "border-primary-pink"
-                    }`}
-                  >
-                    <blockquote className="text-gray-700 text-sm italic leading-relaxed mb-6">
-                      &quot{testimonial.text}&quot
-                    </blockquote>
+                <div key={testimonial.id} className="w-full flex-shrink-0 px-2">
+                  <div className={`bg-white border-l-4 rounded-2xl shadow-lg p-6 ${testimonial.id % 2 === 0 ? "border-primary-blue" : "border-primary-pink"}`}>
+                    <blockquote className="text-gray-700 text-sm italic leading-relaxed mb-6">&quot;{testimonial.text}&quot;</blockquote>
 
                     <div className="border-t border-gray-100 pt-4">
-                      <div
-                        className={`font-semibold text-base ${
-                          testimonial.id % 2 === 0
-                            ? "text-primary-blue"
-                            : "text-primary-pink"
-                        }`}
-                      >
-                        {testimonial.author}
-                      </div>
-                      <div
-                        className={`text-sm ${
-                          testimonial.id % 2 === 0
-                            ? "text-primary-blue"
-                            : "text-primary-pink"
-                        }`}
-                      >
-                        {testimonial.role}
-                      </div>
+                      <div className={`font-semibold text-base ${testimonial.id % 2 === 0 ? "text-primary-blue" : "text-primary-pink"}`}>{testimonial.author}</div>
+                      <div className={`text-sm ${testimonial.id % 2 === 0 ? "text-primary-blue" : "text-primary-pink"}`}>{testimonial.role}</div>
                     </div>
                   </div>
                 </div>
@@ -125,18 +91,8 @@ export default function Testimonials() {
             onClick={prevSlide}
             className="absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
           >
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
+            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
@@ -144,69 +100,26 @@ export default function Testimonials() {
             onClick={nextSlide}
             className="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
           >
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
+            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 
           <div className="flex justify-center mt-6 space-x-2">
             {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                  index === currentSlide
-                    ? "bg-white"
-                    : "bg-white bg-opacity-50"
-                }`}
-              />
+              <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"}`} />
             ))}
           </div>
         </div>
 
         <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className={`bg-white border-l-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 ${
-                testimonial.id % 2 === 0
-                  ? "border-primary-blue"
-                  : "border-primary-pink"
-              }`}
-            >
-              <blockquote className="text-gray-700 text-sm lg:text-base italic leading-relaxed lg:leading-loose mb-6">
-                &quot{testimonial.text}&quot
-              </blockquote>
+            <div key={testimonial.id} className={`bg-white border-l-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 ${testimonial.id % 2 === 0 ? "border-primary-blue" : "border-primary-pink"}`}>
+              <blockquote className="text-gray-700 text-sm lg:text-base italic leading-relaxed lg:leading-loose mb-6">&quot;{testimonial.text}&quot;</blockquote>
 
               <div className="border-t border-gray-100 pt-4">
-                <div
-                  className={`font-semibold text-base lg:text-lg ${
-                    testimonial.id % 2 === 0
-                      ? "text-primary-blue"
-                      : "text-primary-pink"
-                  }`}
-                >
-                  {testimonial.author}
-                </div>
-                <div
-                  className={`text-sm lg:text-base ${
-                    testimonial.id % 2 === 0
-                      ? "text-primary-blue"
-                      : "text-primary-pink"
-                  }`}
-                >
-                  {testimonial.role}
-                </div>
+                <div className={`font-semibold text-base lg:text-lg ${testimonial.id % 2 === 0 ? "text-primary-blue" : "text-primary-pink"}`}>{testimonial.author}</div>
+                <div className={`text-sm lg:text-base ${testimonial.id % 2 === 0 ? "text-primary-blue" : "text-primary-pink"}`}>{testimonial.role}</div>
               </div>
             </div>
           ))}

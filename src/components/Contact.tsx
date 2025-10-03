@@ -6,8 +6,8 @@ export default function ContactCTA() {
     {
       icon: <FaWhatsapp className="text-2xl" />,
       label: "WhatsApp",
-      value: "0822-1800-7435",
-      href: "https://wa.me/6282218007435",
+      value: "0851-5698-5265",
+      href: "https://wa.me/6285156985265",
       description: "Hubungi kami via WhatsApp",
     },
     {

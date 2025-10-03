@@ -52,7 +52,7 @@ export default function StatsTestimonial() {
                     Ustadz Beni Sarbeni, Lc, M.Pd
                   </h4>
                   <p className="text-blue-100 opacity-90">
-                    Mudir Ma&aposhad Sabilunnajah Bandung
+                    Mudir Ma&apos;had Sabilunnajah Bandung
                   </p>
                 </div>
               </div>
