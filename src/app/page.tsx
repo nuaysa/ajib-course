@@ -14,23 +14,23 @@ export default function Home() {
     <div className="flex flex-col">
       <Navbar />
       <Hero />
-      <section id="keunggulan">
+      <section id="keunggulan"/>
         <WhyUs />
-      </section>
-      <section id="kelas">
+     
+      <section id="kelas"/>
         <Classes />
-      </section>
+     
       <Facilities />
-      <section id="testimoni">
+      <section id="testimoni"/>
         <StatsTestimonial />
-      </section>
+     
         <Testimonials />
-      <section id="guru">
+      <section id="guru"/>
         <Teachers />
-      </section>
-      <section id="kontak">
+     
+      <section id="kontak"/>
         <ContactCTA />
-      </section>
+     
       <Footer/>
     </div>
   );
