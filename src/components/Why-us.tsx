@@ -30,7 +30,7 @@ export default function WhyUs() {
         <Card>
           <div className="flex flex-col flex-1">
             <span className="space-y-3">
-              <Image src="/icon_pembelajaran.webp" alt="Icon 3" width={80} height={80} />
+              <Image src="/love.svg" alt="Icon 3" width={80} height={80} />
               <p className="font-semibold text-lg">Pembelajaran Inklusif</p>
             </span>
             <p className="mt-2">Pembelajaran inklusif dan menghargai setiap tahapan perkembangan murid.</p>

@@ -5,14 +5,14 @@ const teachers = [
   {
     id: 1,
     nama: "Reyhan Delvari Suryansyah",
-    image: "",
+    image: "/podium.svg",
     desc: "Alumnus sekolah internasional, Juara nasional pidato bahasa Inggris",
   },
   {
     id: 2,
     nama: "Rahmah Niyati Hasyim",
     image: "/ITB.jpeg",
-    desc: "Alumnus Sekolah Internasional, Pakar Matematika",
+    desc: "Alumnus S2 Institut Teknologi Bandung",
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ export default function Teachers() {
                       alt={teacher.nama}
                       width={80}
                       height={80}
-                      className="object-cover w-full h-full"
+                      className="object-cover bg-white px-3 pb-3 pt-2 w-full h-full"
                     />
                   ) : (
                     <div className="text-4xl text-gray-400">

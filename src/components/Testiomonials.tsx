@@ -10,7 +10,7 @@ export default function Testimonials() {
       id: 1,
       text: "The teaching is super clear and easy to follow. The lessons are really interactive, which helps my son understand the material better. Ust Reyhan is very patient and always provides great examples. Overall, my son really enjoys the classes and looks forward to them every week! The program has been fun and effective for him.",
       author: "Ummu Aqeel",
-      role: "Sabilunnajah",
+      role: "MA Sabilunnajah",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function Testimonials() {
     {
       id: 3,
       text: "Ada main game, terus pelajarannya mudah dipahami. Yang paling Ana sukain lomba.",
-      author: "Fayyath Agima Altini",
+      author: "Fayyadh Arjuna Airiel",
       role: "Kelas 4 MI An-Najiyah",
     },
     {
@@ -65,8 +65,9 @@ export default function Testimonials() {
     <section id="testimoni" className="bg-primary-blue py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-4">APA KATA ORANG TUA MURID KAMI?</h1>
-          <p className="text-lg lg:text-xl text-white max-w-3xl mx-auto">Dengarkan pengalaman langsung dari orang tua yang telah mempercayakan pendidikan anaknya kepada kami</p>
+          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-4">APA KATA MEREKA?</h1>
+          <p className="text-lg lg:text-xl text-white max-w-3xl mx-auto">
+Dengarkan langsung dari mereka yang telah bergabung bersama Ajib Course</p>
         </div>
 
         <div className="md:hidden relative">
@@ -89,7 +90,7 @@ export default function Testimonials() {
 
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/30 border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
           >
             <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -98,7 +99,7 @@ export default function Testimonials() {
 
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white/30 border border-gray-200 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 z-10"
           >
             <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

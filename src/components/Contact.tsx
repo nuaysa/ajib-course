@@ -21,7 +21,7 @@ export default function ContactCTA() {
       icon: <FaMapMarkerAlt className="text-2xl" />,
       label: "Alamat",
       value: "Lihat di Google Maps",
-      href: "https://www.google.com/maps/search/Jl.+Adi+Sedap+Malam+no.+1+-+Adipura+2,+Gedebage,+Bdg/@-6.9564082,107.6807272,3458m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://maps.app.goo.gl/K4zJAWJqEH9woUiH6",
       description: "Kunjungi lokasi kami",
     },
   ];
