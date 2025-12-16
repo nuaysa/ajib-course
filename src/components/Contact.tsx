@@ -13,7 +13,7 @@ export default function ContactCTA() {
     {
       icon: <FaInstagram className="text-2xl" />,
       label: "Instagram",
-      value: "@ajib.courser",
+      value: "@ajib.course",
       href: "https://www.instagram.com/ajib.course",
       description: "Follow kami di Instagram",
     },

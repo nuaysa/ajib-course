@@ -6,7 +6,7 @@ const teachers = [
     id: 1,
     nama: "Reyhan Delvari Suryansyah",
     image: "/podium.svg",
-    desc: "Alumnus sekolah internasional, Juara nasional pidato bahasa Inggris",
+    desc: "Alumnus Al-Irsyad Satya Islamic School, Juara nasional pidato bahasa Inggris",
   },
   {
     id: 2,

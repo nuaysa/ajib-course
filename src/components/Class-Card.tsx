@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ClassCardProps {
   title: string;
-  description: string;
+  description?: string;
   sessions: string;
   sessionType?: string;
   maxStudents: string;
