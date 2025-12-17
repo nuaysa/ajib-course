@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
-// import AnnouncementBanner from "./Announcement";
+import AnnouncementBanner from "./Announcement";
 
 export default function ContactCTA() {
   const contacts = [
     {
       icon: <FaWhatsapp className="text-2xl" />,
       label: "WhatsApp",
-      value: "0822-1800-7435",
-      href: "https://wa.me/6282218007435",
+      value: "0851-5698-5265",
+      href: "https://wa.me/6285156985265",
       description: "Hubungi kami via WhatsApp",
     },
     {
       icon: <FaInstagram className="text-2xl" />,
       label: "Instagram",
-      value: "@ajib.courser",
+      value: "@ajib.course",
       href: "https://www.instagram.com/ajib.course",
       description: "Follow kami di Instagram",
     },
@@ -68,7 +68,7 @@ export default function ContactCTA() {
           </div>
         </div>
       </div>
-      {/* <AnnouncementBanner /> */}
+      <AnnouncementBanner />
     </section>
   );
 }
