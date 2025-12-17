@@ -4,6 +4,7 @@ import Facilities from "@/components/Facilities";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import FloatingAnnouncement from "@/components/popup";
 import StatsTestimonial from "@/components/Stats";
 import Teachers from "@/components/Teachers";
 import Testimonials from "@/components/Testiomonials";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Navbar />
+      <FloatingAnnouncement footerId="site-footer" />
       <Hero />
       <section id="keunggulan"/>
         <WhyUs />
@@ -31,6 +33,7 @@ export default function Home() {
       <section id="kontak"/>
         <ContactCTA />
      
+      <section id="sit-footer"/>
       <Footer/>
     </div>
   );

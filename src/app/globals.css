@@ -6,6 +6,7 @@
 @theme {
   --color-primary-blue: #00bcd4;
   --color-primary-pink: #ff69b4;
+  --color-primary-green: #A5CE3A;
 }
 
 @theme inline {
@@ -125,4 +126,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
 }
