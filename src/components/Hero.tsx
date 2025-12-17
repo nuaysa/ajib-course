@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="max-w-screen h-full py-20 md:py-36 flex justify-center bg-primary-blue px-4">
+    <div className="max-w-screen h-full py-36 flex justify-center bg-primary-blue px-4">
       <div className="flex flex-col justify-center items-center space-y-3 text-center">
         <h1 className="text-xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
           LES INGGRIS UNTUK USIA SD

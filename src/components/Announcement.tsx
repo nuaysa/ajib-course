@@ -19,7 +19,7 @@ export default function AnnouncementBanner({
     <motion.div
       initial={{
         opacity: 0,
-        y: position === "top" ? -24 : 24,
+        y: position === "top" ? 24 : -24,
         scale: 0.96,
       }}
       animate={{
@@ -34,34 +34,27 @@ export default function AnnouncementBanner({
         mass: 0.6,
       }}
       className={cn(
-        "relative w-full overflow-hidden rounded-2xl",
+        "relative w-full overflow-hidden rounded-2xl shadow-md",
         isWhite 
           ? "bg-white" 
           : "bg-[linear-gradient(90deg,#A5CE3A,rgba(165,206,58,0.9),#A5CE3A)]"
       )}
     >
-      {/* Efek shimmer hanya untuk variant normal */}
+      {/* Shimmer effect - lebih subtle */}
       {!isWhite && (
-        <div className="pointer-events-none absolute inset-0">
-          <div
-            className="
-              absolute inset-0 -translate-x-full animate-shimmer
-              bg-[linear-gradient(
-                90deg,
-                transparent,
-                rgba(255,255,255,0.15),
-                rgba(255,255,255,0.35),
-                rgba(255,255,255,0.15),
-                transparent
-              )]
-            "
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div 
+            className="absolute inset-0 -translate-x-full animate-shimmer-slide bg-gradient-to-r from-transparent via-white/20 to-transparent"
+            style={{
+              animation: 'shimmerSlide 2.5s infinite'
+            }}
           />
         </div>
       )}
 
-      {/* CONTENT */}
+      {/* Content */}
       <div className="relative z-10 mx-2 flex items-center justify-center gap-3 rounded-2xl px-6 py-4 text-center">
-        {/* Left sparkle */}
+        {/* Left Sparkle */}
         <motion.div
           animate={{ scale: [1, 1.3, 1] }}
           transition={{
@@ -78,7 +71,7 @@ export default function AnnouncementBanner({
           />
         </motion.div>
 
-        {/* TEXT */}
+        {/* Text Content */}
         <div>
           <p
             className={cn(
@@ -87,7 +80,10 @@ export default function AnnouncementBanner({
             )}
           >
             Diskon Spesial{" "}
-            <span className={isWhite ? "text-black" : "text-white drop-shadow-md"}>
+            <span className={cn(
+              isWhite ? "text-black" : "text-white",
+              "drop-shadow-md"
+            )}>
               25%
             </span>
           </p>
@@ -101,7 +97,7 @@ export default function AnnouncementBanner({
           </p>
         </div>
 
-        {/* Right sparkle */}
+        {/* Right Sparkle */}
         <motion.div
           animate={{ scale: [1, 1.3, 1] }}
           transition={{
@@ -119,6 +115,18 @@ export default function AnnouncementBanner({
           />
         </motion.div>
       </div>
+
+      {/* Tambahkan keyframes untuk animasi shimmer di global.css */}
+      <style jsx global>{`
+        @keyframes shimmerSlide {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      `}</style>
     </motion.div>
   );
 }

@@ -41,14 +41,14 @@ export default function FloatingAnnouncement({ footerId = 'site-footer' }: Float
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 40, scale: 0.95 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-        className="fixed bottom-6 left-1/2 z-50 w-[calc(100%-2rem)] max-w-xl -translate-x-1/2"
+        className="fixed top-20 lg:top-28 left-1/2 z-50 w-[calc(100%-2rem)] max-w-xl -translate-x-1/2"
       >
         <div className="relative">
           <AnnouncementBanner />
           
           <button
             onClick={handleClose}
-            className="absolute -top-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-black text-white shadow-lg hover:scale-110 transition"
+            className="absolute -top-3 -right-3 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full bg-black text-white hover:scale-110 transition"
             aria-label="Close announcement"
           >
             <X size={16} />
