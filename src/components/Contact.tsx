@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
-import AnnouncementBanner from "./Announcement";
+// import AnnouncementBanner from "./Announcement";
 
 export default function ContactCTA() {
   const contacts = [
@@ -68,7 +68,7 @@ export default function ContactCTA() {
           </div>
         </div>
       </div>
-      <AnnouncementBanner />
+      {/* <AnnouncementBanner /> */}
     </section>
   );
 }
