@@ -30,6 +30,18 @@ export default function Testimonials() {
       author: "Abu Salman",
       role: "Orang Tua Murid",
     },
+    {
+      id: 5,
+      text: "les di Ajib seru gak bikin bosen karena cara belajarnya gak bikin bosen, ada gamenya juga jadi tambah seru... Kata2 bahasa inggris nya nambah terus, jadi sedikit2 sudah mulai diterapkan di obrolan sehari2..... Sama temen2 apalagi kalau lagi Mabar...",
+      author: "Kalila Rifda Handiana",
+      role: "Kelas 6 MI An-Najiyah Bandung",
+    },
+    {
+      id: 6,
+      text: "Les di Mr menyenangkan dan tidak membosankan. Les di Mr seru, jadi kita belajar seperti sedang bermain.",
+      author: "Faqih",
+      role: "Kelas 3 MI An-Najiyah Bandung",
+    },
   ];
 
   useEffect(() => {
