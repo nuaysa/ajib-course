@@ -14,30 +14,18 @@ export default function Testimonials() {
     },
     {
       id: 2,
-      text: "Metode belajarnya sangat efektif. Guru-gurunya sabar dan profesional. Alhamdulillah, anak saya jadi lebih semangat belajar.",
-      author: "Ummu Maryam",
-      role: "Orang Tua Murid",
-    },
-    {
-      id: 3,
       text: "Ada main game, terus pelajarannya mudah dipahami. Yang paling Ana sukain lomba.",
       author: "Fayyadh Arjuna Airiel",
       role: "Kelas 4 MI An-Najiyah",
     },
     {
-      id: 4,
-      text: "Saya sangat terbantu dengan adanya pemisahan kelas ikhwan dan akhwat. Ini membuat kami sebagai orang tua merasa lebih tenang. Materi bahasa Inggrisnya juga mudah dicerna.",
-      author: "Abu Salman",
-      role: "Orang Tua Murid",
-    },
-    {
-      id: 5,
+      id: 3,
       text: "les di Ajib seru gak bikin bosen karena cara belajarnya gak bikin bosen, ada gamenya juga jadi tambah seru... Kata2 bahasa inggris nya nambah terus, jadi sedikit2 sudah mulai diterapkan di obrolan sehari2..... Sama temen2 apalagi kalau lagi Mabar...",
       author: "Kalila Rifda Handiana",
       role: "Kelas 6 MI An-Najiyah Bandung",
     },
     {
-      id: 6,
+      id: 4,
       text: "Les di Mr menyenangkan dan tidak membosankan. Les di Mr seru, jadi kita belajar seperti sedang bermain.",
       author: "Faqih",
       role: "Kelas 3 MI An-Najiyah Bandung",
